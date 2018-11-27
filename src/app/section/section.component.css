@@ -1,0 +1,138 @@
+.container {
+    width: 720px;
+    margin: auto;
+}
+.section {
+    background-color: #191919a6;
+    padding: 20px;
+    border-radius: 2px;
+}
+.section .level {
+    color: #FFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.level .step {
+    position: relative;
+    text-align: center;
+}
+.step i {
+    margin: 10px auto;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: #808080;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+.step span {
+    color:#808080;
+}
+.step .active1 {
+ color: #ECBD00;
+ font-weight: bold;
+}
+.step .active {
+    background: #ECBD00;
+}
+.step progress {
+    -webkit-appearance: none;
+    height: 2px;
+    position: absolute;
+    top: 35px;
+    width: 100%;
+    left: 50%;
+    z-index: 1;
+    color: red;
+}
+.step progress::-webkit-progress-value{
+    background-color: #ECBD00;
+}
+.section .content {
+    color: #FFF;
+}
+.content .title {
+    font-size: xx-large;
+    text-align: center;
+    margin: 20px 0;
+}
+.content .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.bottom .selector {
+    padding: 25px 30px;
+    display: grid;
+    margin: 15px 5px;
+    border-radius: 2px;
+    font-size: xx-large;
+    opacity: 0.6;
+    background-color: #ECBD00;
+    transition: 0.2s opacity;
+    cursor: pointer;
+}
+.selector input[type="radio"]{
+
+}
+.selector i {
+    height: 55px;
+    width: 80px;
+    place-self: center;
+}
+.selector span {
+    place-self: center;
+    margin-top: 10px;
+    font-size: large;
+}
+.bottom .selector:hover {
+    opacity: 1;
+
+}
+.be, .ch, .de, .fr, .it, .pt,.nl{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.be{
+    background-image: url("src/assets/images/drapeau/belgique.png");
+}
+.ch{
+    background-image: url("src/assets/images/drapeau/suisse.png");
+}
+.de{
+    background-image: url("src/assets/images/drapeau/allemagne.png");
+}
+.fr{
+    background-image: url("src/assets/images/drapeau/france.png");
+}
+.it{
+    background-image: url("src/assets/images/drapeau/italie.png");
+}
+.pt{
+    background-image: url("src/assets/images/drapeau/portugal.png");
+}
+.nl{
+    background-image: url("src/assets/images/drapeau/paysbas.png");
+}
+.content .next {
+    text-align: center;
+    margin-top: 15px;
+}
+.next button {
+    background-color: #ecbd00;
+    border: none;
+    color: #FFF;
+    font-weight: bolder;
+    padding: 10px 60px;
+    font-size: medium;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.2s background;
+}
+.next button:hover{
+    background-color: #bd9804;
+}
+.next button:focus{
+    outline: none;
+}
